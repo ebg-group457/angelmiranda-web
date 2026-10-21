@@ -1,0 +1,41 @@
+:root{--d:#1f2328;--d2:#2b3036;--a:#f59e0b;--a2:#ea580c;--l:#f5f5f4;--t:#44484e}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--t);line-height:1.6;background:#fff}
+h1,h2,h3{font-family:Montserrat,sans-serif;color:var(--d);line-height:1.2}
+.wrap{max-width:1140px;margin:auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:9;background:var(--d)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-family:Montserrat;font-weight:600}
+.logo img{width:36px}.logo b{color:var(--a)}
+.menu{display:flex;gap:24px;align-items:center}.menu a{color:#ddd;text-decoration:none}.menu a:hover{color:var(--a)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:26px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--a),var(--a2));color:#fff!important;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:500}
+.btn.sm{padding:8px 16px}.btn.ghost{background:none;border:2px solid var(--a)}.btn.wa{background:#25d366}
+.hero{background:linear-gradient(135deg,rgba(31,35,40,.95),rgba(31,35,40,.8)),repeating-linear-gradient(45deg,#2b3036 0 20px,#23272c 20px 40px);color:#ddd;padding:130px 0 110px}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.6rem);font-weight:800;max-width:800px;margin:12px 0 20px}.hero h1 span{color:var(--a)}
+.lead{font-size:1.2rem;max-width:620px}.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.tag{color:var(--a2);font-weight:600;text-transform:uppercase;letter-spacing:2px;font-size:.85rem}
+.sec{padding:90px 0}.sec.alt{background:var(--l)}.sec h2{font-size:2.1rem;margin:8px 0 24px}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.ph{color:#b45309;font-style:italic;margin:12px 0}
+.stat{background:var(--d);border-radius:12px;padding:36px;display:grid;color:#ccc;border-left:6px solid var(--a)}
+.stat strong{font:800 3rem Montserrat;color:var(--a)}.stat span{margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card,.why{background:#fff;padding:28px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.06);border-top:4px solid var(--a)}
+.card svg{width:44px;height:44px;fill:none;stroke:var(--a2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.card h3,.why h3{margin-bottom:8px}.why b{font:800 2rem Montserrat;color:var(--a)}
+.proj{height:220px;border-radius:12px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.proj h3{color:#fff}.proj span{font-size:.8rem;color:var(--a)}
+.p1{background:linear-gradient(160deg,#3a4048,#1f2328)}.p2{background:linear-gradient(160deg,#92400e,#1f2328)}.p3{background:linear-gradient(160deg,#57534e,#1c1917)}
+.p4{background:linear-gradient(160deg,#c2410c,#292524)}.p5{background:linear-gradient(160deg,#44403c,#0c0a09)}.p6{background:linear-gradient(160deg,#b45309,#2b3036)}
+.contact{background:var(--d2);color:#ccc}.contact h2{color:#fff}
+.info{list-style:none;padding:0;display:grid;gap:14px}.info b{color:#fff}.info em{color:var(--a)}
+footer{background:#16191c;color:#888;padding:24px 0;text-align:center}
+@media(max-width:800px){.two{grid-template-columns:1fr}.burger{display:block}
+.menu{display:none;position:absolute;top:68px;left:0;right:0;background:var(--d);flex-direction:column;padding:20px}.menu.open{display:flex}}
+.proj{background-size:cover;background-position:center;min-height:260px;height:auto}.proj p{font-size:.85rem;color:#e7e5e4;margin:.3rem 0 0}
+.gal-t{margin:2.5rem 0 1rem}.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}.gal img{width:100%;height:160px;object-fit:cover;border-radius:8px;display:block}
+.cta.center{justify-content:center;margin-top:2rem}
+.yt{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px;vertical-align:middle}.yt:hover{color:var(--a)}
+#nosotros h3{margin-top:1.2rem}
+.hero{background-image:linear-gradient(rgba(20,22,26,.82),rgba(20,22,26,.9)),url(img/obra-08.jpg);background-size:cover;background-position:center}

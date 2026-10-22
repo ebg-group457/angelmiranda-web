@@ -10,7 +10,7 @@ h1,h2,h3{font-family:Montserrat,sans-serif;color:var(--d);line-height:1.2}
 .menu{display:flex;gap:24px;align-items:center}.menu a{color:#ddd;text-decoration:none}.menu a:hover{color:var(--a)}
 .burger{display:none;background:none;border:0;color:#fff;font-size:26px}
 .btn{display:inline-block;background:linear-gradient(90deg,var(--a),var(--a2));color:#fff!important;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:500}
-.btn.sm{padding:8px 16px}.btn.ghost{background:none;border:2px solid var(--a)}.btn.wa{background:#25d366}
+.btn.sm{padding:8px 16px}.btn.ghost{background:none;border:2px solid var(--a)}.btn.wa{background:#25d366}.btn.is-off{cursor:default;opacity:.6}.btn.is-off:hover{transform:none;box-shadow:none}
 .hero{background:linear-gradient(135deg,rgba(31,35,40,.95),rgba(31,35,40,.8)),repeating-linear-gradient(45deg,#2b3036 0 20px,#23272c 20px 40px);color:#ddd;padding:130px 0 110px}
 .hero h1{color:#fff;font-size:clamp(2rem,5vw,3.6rem);font-weight:800;max-width:800px;margin:12px 0 20px}.hero h1 span{color:var(--a)}
 .lead{font-size:1.2rem;max-width:620px}.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
@@ -28,8 +28,8 @@ h1,h2,h3{font-family:Montserrat,sans-serif;color:var(--d);line-height:1.2}
 .proj h3{color:#fff}.proj span{font-size:.8rem;color:var(--a)}
 .p1{background:linear-gradient(160deg,#3a4048,#1f2328)}.p2{background:linear-gradient(160deg,#92400e,#1f2328)}.p3{background:linear-gradient(160deg,#57534e,#1c1917)}
 .p4{background:linear-gradient(160deg,#c2410c,#292524)}.p5{background:linear-gradient(160deg,#44403c,#0c0a09)}.p6{background:linear-gradient(160deg,#b45309,#2b3036)}
-.contact{background:var(--d2);color:#ccc}.contact h2{color:#fff}
-.info{list-style:none;padding:0;display:grid;gap:14px}.info b{color:#fff}.info em{color:var(--a)}
+.contact{background:#95989b;color:#1f2328}.contact h2{color:#111}.contact .tag{color:#7c2d12}.contact a:not(.btn){color:#111;text-decoration:underline}
+.info{list-style:none;padding:0;display:grid;gap:14px}.info b{color:#111}.info em{color:var(--a)}
 footer{background:#16191c;color:#888;padding:24px 0;text-align:center}
 @media(max-width:800px){.two{grid-template-columns:1fr}.burger{display:block}
 .menu{display:none;position:absolute;top:68px;left:0;right:0;background:var(--d);flex-direction:column;padding:20px}.menu.open{display:flex}}

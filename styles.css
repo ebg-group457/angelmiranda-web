@@ -87,3 +87,11 @@ html{scroll-padding-top:80px}@media(max-width:800px){.menu{top:64px}}
 .card.srv::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(15,17,20,.94) 0%,rgba(15,17,20,.78) 45%,rgba(15,17,20,.35) 100%)}
 .card.srv:hover::before{transform:scale(1.06)}
 .card.srv h3{color:#fff}.card.srv p{color:#e6e6e6}.card.srv svg{stroke:var(--a)}
+.proj.has-gal{cursor:pointer;position:relative}.proj.has-gal:focus-visible{outline:3px solid var(--a);outline-offset:3px}
+.gal-badge{position:absolute;top:14px;right:14px;font-style:normal;font-size:.78rem;background:rgba(0,0,0,.6);color:#fff;padding:4px 10px;border-radius:20px}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,12,14,.94);display:flex;align-items:center;justify-content:center;padding:20px}.lb[hidden]{display:none}
+.lb figure{margin:0;max-width:min(1100px,92vw);text-align:center}.lb img{max-width:100%;max-height:80vh;border-radius:8px;display:block;margin:0 auto}
+.lb figcaption{color:#ddd;margin-top:10px;font-size:.95rem}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font-size:2rem;line-height:1;cursor:pointer}.lb button:hover,.lb button:focus-visible{background:var(--a);outline:none}
+.lb-x{top:16px;right:16px}.lb-p{left:16px;top:50%;transform:translateY(-50%)}.lb-n{right:16px;top:50%;transform:translateY(-50%)}
+@media(max-width:600px){.lb-p,.lb-n{top:auto;bottom:16px;transform:none}}

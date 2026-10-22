@@ -10,7 +10,7 @@
 <meta property="og:locale" content="es_CO">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 <header class="nav"><div class="wrap nav-in">
@@ -72,7 +72,7 @@
  <div class="grid">
   <div class="proj ph1" style="background-image:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.1)),url(img/bosque-delicias.jpg)"><span>Vivienda V.I.S. · Cali · 2006–2008</span><h3>Multifamiliar Bosque de las Delicias</h3><p>67 apartamentos — Fondo Especial de Vivienda</p></div>
   <div class="proj ph1" style="background-image:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.1)),url(img/palmar-delicias.jpg)"><span>Vivienda V.I.S. · Cali · 2008–2009</span><h3>Multifamiliar Palmar de las Delicias</h3><p>90 apartamentos — Fondo Especial de Vivienda</p></div>
-  <div class="proj p1"><span>Vías · Puerto Tejada, Cauca · 2019–2026</span><h3>Pavimentos y alcantarillado urbano</h3><p>Municipio de Puerto Tejada — Fonpacífico (barrios Betania, La Esperanza, Hipódromo, entre otros)</p></div>
+  <div class="proj ph1 has-gal" role="button" tabindex="0" aria-label="Ver galería: Pavimentos y alcantarillado urbano, Puerto Tejada" data-gallery="[{&quot;src&quot;: &quot;img/pavimentos/pav-01.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-01.jpg&quot;, &quot;alt&quot;: &quot;Compactación de carpeta asfáltica con rodillo neumático&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-02.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-02.jpg&quot;, &quot;alt&quot;: &quot;Pavimentadora Vögele extendiendo mezcla asfáltica&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-03.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-03.jpg&quot;, &quot;alt&quot;: &quot;Extendido de asfalto en vía urbana&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-04.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-04.jpg&quot;, &quot;alt&quot;: &quot;Vía urbana con pavimento asfáltico nuevo&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-05.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-05.jpg&quot;, &quot;alt&quot;: &quot;Base granular conformada y compactada&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-06.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-06.jpg&quot;, &quot;alt&quot;: &quot;Excavación de zanja para redes de alcantarillado&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-07.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-07.jpg&quot;, &quot;alt&quot;: &quot;Instalación de tubería de alcantarillado&quot;}, {&quot;src&quot;: &quot;img/pavimentos/pav-08.webp&quot;, &quot;fb&quot;: &quot;img/pavimentos/pav-08.jpg&quot;, &quot;alt&quot;: &quot;Pavimentadora y rodillo en calle del barrio&quot;}]" style="background-image:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.1)),url(img/proj-pavimentos.jpg)"><em class="gal-badge">📷 8 fotos</em><span>Vías · Puerto Tejada, Cauca · 2019–2026</span><h3>Pavimentos y alcantarillado urbano</h3><p>Municipio de Puerto Tejada — Fonpacífico (barrios Betania, La Esperanza, Hipódromo, entre otros)</p></div>
   <div class="proj p2"><span>Urbanismo · Cali · 2025–en ejecución</span><h3>Zonas de cesión Universidad Libre, sede Valle del Lili</h3><p>Construcción y adecuación de zonas verdes</p></div>
   <div class="proj p3"><span>Vías · Guachené, Cauca · 2010–2022</span><h3>Zona Franca del Cauca</h3><p>Patio de camiones y tractomulas con polímeros Base Seal, y reparación de la vía principal de acceso</p></div>
   <div class="proj p4"><span>Vías · Jamundí · 2018–2019</span><h3>Avenida Sachamate, calzada occidental</h3><p>Obra civil de tres tramos, sector Anturios</p></div>
@@ -121,4 +121,16 @@ document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){go(i-1);
 var v=document.querySelector('.hero-video'),m=v&&v.querySelector('video');if(!m)return;
 if(matchMedia('(prefers-reduced-motion: reduce)').matches){m.removeAttribute('autoplay');m.pause();return}
 m.addEventListener('playing',function(){v.classList.add('ready')});m.addEventListener('error',function(){v.remove()},true);var p=m.play();p&&p.catch(function(){});})();</script>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galería de fotos" hidden><button class="lb-x" aria-label="Cerrar">&times;</button><button class="lb-p" aria-label="Foto anterior">&#8249;</button><figure><picture><source type="image/webp"><img alt=""></picture><figcaption></figcaption></figure><button class="lb-n" aria-label="Foto siguiente">&#8250;</button></div>
+<script>(function(){var lb=document.getElementById('lb'),src=lb.querySelector('source'),im=lb.querySelector('img'),cap=lb.querySelector('figcaption'),L=[],i=0,last,sx=0;
+function show(){var it=L[i];src.srcset=it.src;im.src=it.fb;im.alt=it.alt;cap.textContent=it.alt+' ('+(i+1)+'/'+L.length+')'}
+function open(el){L=JSON.parse(el.dataset.gallery);i=0;last=el;lb.hidden=false;document.body.style.overflow='hidden';show();lb.querySelector('.lb-x').focus()}
+function close(){lb.hidden=true;document.body.style.overflow='';last&&last.focus()}
+function go(d){i=(i+d+L.length)%L.length;show()}
+document.querySelectorAll('[data-gallery]').forEach(function(el){el.addEventListener('click',function(){open(el)});el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el)}})});
+lb.querySelector('.lb-x').onclick=close;lb.querySelector('.lb-p').onclick=function(){go(-1)};lb.querySelector('.lb-n').onclick=function(){go(1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();else if(e.key==='ArrowLeft')go(-1);else if(e.key==='ArrowRight')go(1);else if(e.key==='Tab'){var b=[].slice.call(lb.querySelectorAll('button')),k=b.indexOf(document.activeElement);e.preventDefault();b[(k+(e.shiftKey?-1:1)+b.length)%b.length].focus()}});
+lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(dx<0?1:-1)},{passive:true});
+if(location.hash==='#galeria-test'){var g=document.querySelector('[data-gallery]');g&&open(g)}})();</script>
 </body></html>

@@ -73,3 +73,4 @@ html{scroll-padding-top:80px}@media(max-width:800px){.menu{top:64px}}
 @media(max-width:700px){.logo{gap:8px}.logo .ebg-badge{height:64px;padding:3px 4px;border-radius:9px}.logo .logo3d{width:64px;height:64px}}
 @media(max-width:420px){.logo>span:last-child{font-size:.72rem;line-height:1.2}}
 .logo{margin-right:24px}
+.logo>span:last-child{max-width:180px;line-height:1.25}

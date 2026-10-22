@@ -48,11 +48,11 @@ footer{background:#16191c;color:#888;padding:24px 0;text-align:center}
 .dots{position:absolute;bottom:18px;left:0;right:0;z-index:3;display:flex;justify-content:center;gap:8px}.dots button{width:10px;height:10px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0}.dots button.on{background:var(--a);width:26px;border-radius:5px}
 @media(max-width:700px){.hero .nav{display:none}.slide figcaption{left:16px;right:16px;bottom:44px;text-align:center}}
 @media(prefers-reduced-motion:reduce){.slide{transition:none}}
-.logo .logo3d{display:inline-block;width:52px;height:52px;flex:none;border-radius:50%;overflow:hidden;background:#eee;box-shadow:0 2px 6px rgba(0,0,0,.45)}
+.logo .logo3d{display:inline-block;width:104px;height:104px;flex:none;border-radius:50%;overflow:hidden;background:#eee;box-shadow:0 2px 6px rgba(0,0,0,.45)}
 .logo .logo3d video{width:100%;height:100%;display:block;object-fit:cover;transform:scale(1.04);pointer-events:none}
-@media(max-width:700px){.logo .logo3d{width:40px;height:40px}}
-.nav-in{height:80px}.menu a{font-weight:500;letter-spacing:.02em}
-.hero{min-height:100vh;min-height:100svh;padding:120px 0 90px}
+@media(max-width:700px){.logo .logo3d{width:80px;height:80px}}
+.nav-in{height:124px}.menu a{font-weight:500;letter-spacing:.02em}
+.hero{min-height:100vh;min-height:100svh;padding:160px 0 90px}
 .hero h1{font-size:clamp(2.4rem,6.4vw,5rem);letter-spacing:-.02em;max-width:900px}.hero .lead{font-size:clamp(1rem,1.5vw,1.25rem);max-width:640px}
 .hero-video{position:absolute;inset:0;z-index:1;overflow:hidden;opacity:0;transition:opacity 1.5s;pointer-events:none}.hero-video.ready{opacity:1}
 .hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -66,3 +66,4 @@ footer{background:#16191c;color:#888;padding:24px 0;text-align:center}
 footer{padding:40px 0}
 @media(max-width:700px){.stats-band .wrap{grid-template-columns:1fr 1fr}.nav-in{height:64px}.sec{padding-top:72px;padding-bottom:72px}}
 html{scroll-padding-top:80px}@media(max-width:800px){.menu{top:64px}}
+@media(max-width:700px){.nav-in{height:96px}.hero{padding-top:130px}}

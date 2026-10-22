@@ -19,7 +19,19 @@
  <nav class="menu"><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#por-que">Por qué elegirnos</a><a href="#contacto" class="btn sm">Contacto</a></nav>
 </div></header>
 
-<section id="inicio" class="hero"><div class="wrap">
+<section id="inicio" class="hero" aria-roledescription="carrusel" aria-label="Proyectos destacados">
+ <!-- SLIDES DEL BANNER: para agregar una foto, copie una línea <figure> (ver README) -->
+ <div class="slides">
+  <figure class="slide on"><img src="img/bosque-delicias.jpg" alt="Multifamiliar Bosque de las Delicias · Cali" decoding="async"><figcaption>Multifamiliar Bosque de las Delicias · Cali</figcaption></figure>
+  <figure class="slide"><img src="img/palmar-delicias.jpg" alt="Multifamiliar Palmar de las Delicias · Cali" loading="lazy" decoding="async"><figcaption>Multifamiliar Palmar de las Delicias · Cali</figcaption></figure>
+  <figure class="slide"><img src="img/obra-08.jpg" alt="Obra de Angel Miranda & Cía" loading="lazy" decoding="async"></figure>
+  <figure class="slide"><img src="img/obra-02.jpg" alt="Obra de Angel Miranda & Cía" loading="lazy" decoding="async"></figure>
+  <figure class="slide"><img src="img/obra-05.jpg" alt="Obra de Angel Miranda & Cía" loading="lazy" decoding="async"></figure>
+  <figure class="slide"><img src="img/obra-09.jpg" alt="Obra de Angel Miranda & Cía" loading="lazy" decoding="async"></figure>
+ </div>
+ <button class="nav prev" aria-label="Foto anterior">&#10094;</button><button class="nav next" aria-label="Foto siguiente">&#10095;</button>
+ <div class="dots"></div>
+ <div class="wrap">
  <p class="tag">Desde 1995</p>
  <h1>Más de 30 años construyendo <span>obras que perduran</span></h1>
  <p class="lead">Arquitectura e ingeniería: obras civiles y arquitectónicas para el sector público y privado en el Valle del Cauca, Cauca y otras regiones de Colombia.</p>
@@ -90,4 +102,12 @@
 
 <footer><div class="wrap"><a class="yt" href="https://www.youtube.com/@angelmirandabaseseal/videos" target="_blank" rel="noopener" aria-label="YouTube: Angel Miranda Cia"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M23 7.2a3 3 0 00-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 001 7.2 31 31 0 00.5 12a31 31 0 00.5 4.8 3 3 0 002.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 002.1-2.1 31 31 0 00.5-4.8 31 31 0 00-.5-4.8zM9.8 15.1V8.9l5.7 3.1z"/></svg> Angel Miranda Cia</a> · © <span id="y">2026</span> ANGEL MIRANDA &amp; CIA CONSTRUCCIONES S.A.S. · angelmiranda.co</div></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();document.querySelectorAll('.menu a').forEach(a=>a.onclick=()=>document.querySelector('.menu').classList.remove('open'));</script>
+<script>(function(){var h=document.querySelector('.hero'),sl=[].slice.call(h.querySelectorAll('.slide')),d=h.querySelector('.dots'),i=0,t,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+sl.forEach(function(_,k){var b=document.createElement('button');b.setAttribute('aria-label','Ir a foto '+(k+1));b.onclick=function(){go(k);rs()};d.appendChild(b)});
+function go(n){sl[i].classList.remove('on');d.children[i].classList.remove('on');i=(n+sl.length)%sl.length;var im=sl[i].querySelector('img');im.loading='eager';sl[(i+1)%sl.length].querySelector('img').loading='eager';sl[i].classList.add('on');d.children[i].classList.add('on')}
+function st(){if(!rm&&sl.length>1)t=setInterval(function(){go(i+1)},5000)}function sp(){clearInterval(t)}function rs(){sp();st()}
+go(0);st();h.querySelector('.prev').onclick=function(){go(i-1);rs()};h.querySelector('.next').onclick=function(){go(i+1);rs()};
+h.addEventListener('mouseenter',sp);h.addEventListener('mouseleave',st);
+var x=null;h.addEventListener('touchstart',function(e){x=e.touches[0].clientX},{passive:true});h.addEventListener('touchend',function(e){if(x===null)return;var dx=e.changedTouches[0].clientX-x;if(Math.abs(dx)>40){go(i+(dx<0?1:-1));rs()}x=null});
+document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){go(i-1);rs()}if(e.key==='ArrowRight'){go(i+1);rs()}})})();</script>
 </body></html>

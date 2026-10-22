@@ -8,4 +8,4 @@ Las fotos del banner están en `index.html`, dentro de `<div class="slides">`. P
 Los puntos de navegación se generan solos. Rota cada 5 s, pausa al pasar el mouse, permite deslizar en celular y respeta "reducir movimiento".
 
 ## Video de fondo (inicio)
-`<div class="hero-video" data-yt="ID" data-start="SEG">` en `index.html`: cambie `data-yt` por el ID de otro video de YouTube del canal. Si el video no reproduce (o el usuario tiene "reducir movimiento"), se ve el carrusel de fotos.
+Archivos en `video/` (`hero.mp4` H.264, `hero.webm`, `hero-poster.jpg`). Para cambiarlo, reemplace esos archivos con los mismos nombres (sin audio, < 6 MB). Si el video no carga o el usuario tiene "reducir movimiento", se ve el carrusel de fotos.

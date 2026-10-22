@@ -57,7 +57,7 @@ footer{background:#16191c;color:#888;padding:24px 0;text-align:center}
 .hero{min-height:100vh;min-height:100svh;padding:120px 0 90px}
 .hero h1{font-size:clamp(2.4rem,6.4vw,5rem);letter-spacing:-.02em;max-width:900px}.hero .lead{font-size:clamp(1rem,1.5vw,1.25rem);max-width:640px}
 .hero-video{position:absolute;inset:0;z-index:1;overflow:hidden;opacity:0;transition:opacity 1.5s;pointer-events:none}.hero-video.ready{opacity:1}
-.hero-video iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100vh;min-width:177.78vh;transform:translate(-50%,-50%);border:0}
+.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero-video::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,22,26,.85),rgba(20,22,26,.55))}
 .hero-video.ready~.dots,.hero:has(.hero-video.ready) .nav,.hero:has(.hero-video.ready) .slide figcaption{display:none}
 .stats-band{background:linear-gradient(90deg,var(--a),var(--a2));color:#fff;padding:48px 0}

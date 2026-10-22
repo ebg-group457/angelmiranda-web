@@ -106,7 +106,7 @@ html{scroll-padding-top:80px}@media(max-width:800px){.menu{top:64px}}
 .cli:hover,.cli:focus-within{border-color:#ccc;box-shadow:0 4px 14px rgba(0,0,0,.08)}
 .cli:hover img,.cli:focus-within img{filter:none;opacity:1}
 @media(max-width:900px){.cli-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.cli-grid{gap:10px}.cli figure{height:132px}.cli img{max-height:60px}}
+@media(max-width:560px){.cli-grid{gap:8px}.cli figure{height:150px;padding:10px 6px 8px}.cli img{max-height:66px}.cli figcaption{font-size:12.5px;height:3.75em;-webkit-line-clamp:3}}
 @media(prefers-reduced-motion:reduce){.cli,.cli img{transition:none}}
 
 /* Valores collage */
@@ -119,5 +119,6 @@ html{scroll-padding-top:80px}@media(max-width:800px){.menu{top:64px}}
 .val-collage:hover img{transform:scale(1.04)}
 .vc-a{grid-area:a}.vc-b{grid-area:b}.vc-c{grid-area:c}.vc-d{grid-area:d}.vc-e{grid-area:e}
 .vc-a img{object-position:35% 25%}
-@media(max-width:900px){.grid.vals{grid-template-columns:1fr}.val-collage{grid-column:auto}.vc-grid{height:340px}}
+@media(max-width:900px){.grid.vals{grid-template-columns:1fr}.val-collage{grid-column:auto}.vc-grid{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:230px 170px 170px;grid-template-areas:"a b" "c c" "d e"}.vc-a img{object-position:40% 20%}}
 @media(prefers-reduced-motion:reduce){.vc-grid img{transition:none}}
+@media(hover:none){.cli img{filter:none;opacity:1}}

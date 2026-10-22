@@ -30,12 +30,20 @@
   <figure class="slide"><img src="img/obra-09.jpg" alt="Obra de Angel Miranda & Cía" loading="lazy" decoding="async"></figure>
  </div>
  <button class="nav prev" aria-label="Foto anterior">&#10094;</button><button class="nav next" aria-label="Foto siguiente">&#10095;</button>
+ <div class="hero-video" data-yt="XMgIj2YNARI" data-start="8" aria-hidden="true"></div>
  <div class="dots"></div>
  <div class="wrap">
  <p class="tag">Desde 1995</p>
  <h1>Más de 30 años construyendo <span>obras que perduran</span></h1>
  <p class="lead">Arquitectura e ingeniería: obras civiles y arquitectónicas para el sector público y privado en el Valle del Cauca, Cauca y otras regiones de Colombia.</p>
  <div class="cta"><a href="#contacto" class="btn">Solicitar cotización</a><a href="#servicios" class="btn ghost">Nuestros servicios</a></div>
+</div></section>
+
+<section class="stats-band"><div class="wrap">
+ <div><strong>1995</strong><span>Año de fundación</span></div>
+ <div><strong>30+</strong><span>Años de experiencia</span></div>
+ <div><strong>3</strong><span>Áreas: arquitectura, obra civil y gestión</span></div>
+ <div><strong>2</strong><span>Sectores: público y privado</span></div>
 </div></section>
 
 <section id="nosotros" class="sec"><div class="wrap two">
@@ -110,4 +118,8 @@ go(0);st();h.querySelector('.prev').onclick=function(){go(i-1);rs()};h.querySele
 h.addEventListener('mouseenter',sp);h.addEventListener('mouseleave',st);
 var x=null;h.addEventListener('touchstart',function(e){x=e.touches[0].clientX},{passive:true});h.addEventListener('touchend',function(e){if(x===null)return;var dx=e.changedTouches[0].clientX-x;if(Math.abs(dx)>40){go(i+(dx<0?1:-1));rs()}x=null});
 document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){go(i-1);rs()}if(e.key==='ArrowRight'){go(i+1);rs()}})})();</script>
+<script>(function(){var n=document.querySelector('.nav');function f(){n.classList.toggle('scrolled',scrollY>40)}addEventListener('scroll',f,{passive:true});f();
+var v=document.querySelector('.hero-video');if(!v||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var id=v.dataset.yt,i=document.createElement('iframe');i.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&mute=1&loop=1&playlist='+id+'&start='+v.dataset.start+'&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&iv_load_policy=3&disablekb=1&enablejsapi=1&origin='+encodeURIComponent(location.origin);i.allow='autoplay; encrypted-media';i.title='Video de obra';i.tabIndex=-1;
+i.onload=function(){i.contentWindow.postMessage('{"event":"listening","id":1}','*')};addEventListener('message',function(e){if(!/youtube/.test(e.origin))return;try{var d=JSON.parse(e.data);if(d.info&&d.info.playerState===1)v.classList.add('ready')}catch(x){}});v.appendChild(i)})();</script>
 </body></html>

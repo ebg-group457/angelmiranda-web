@@ -6,3 +6,6 @@ Las fotos del banner están en `index.html`, dentro de `<div class="slides">`. P
 1. Suba la foto a `img/` (JPG, ~1600 px de ancho, < 300 KB).
 2. Copie una línea `<figure class="slide">` y cambie `src`, `alt` y el `<figcaption>` (opcional, nombre del proyecto). Use `loading="lazy"` en todas menos la primera; solo la primera lleva la clase `on`.
 Los puntos de navegación se generan solos. Rota cada 5 s, pausa al pasar el mouse, permite deslizar en celular y respeta "reducir movimiento".
+
+## Video de fondo (inicio)
+`<div class="hero-video" data-yt="ID" data-start="SEG">` en `index.html`: cambie `data-yt` por el ID de otro video de YouTube del canal. Si el video no reproduce (o el usuario tiene "reducir movimiento"), se ve el carrusel de fotos.

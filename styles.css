@@ -122,3 +122,17 @@ html{scroll-padding-top:80px}@media(max-width:800px){.menu{top:64px}}
 @media(max-width:900px){.grid.vals{grid-template-columns:1fr}.val-collage{grid-column:auto}.vc-grid{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:230px 170px 170px;grid-template-areas:"a b" "c c" "d e"}.vc-a img{object-position:40% 20%}}
 @media(prefers-reduced-motion:reduce){.vc-grid img{transition:none}}
 @media(hover:none){.cli img{filter:none;opacity:1}}
+
+/* Banda contador YouTube */
+.yt-band{background:var(--d);color:#e7e5e4;padding:56px 0 44px;text-align:center}
+.yt-band .tag{color:var(--a);margin:0 0 22px}
+.yt-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.yt-stats li{text-align:center;padding:10px 8px;border-left:1px solid rgba(255,255,255,.1)}
+.yt-stats li:first-child{border-left:0}
+.stat-n{display:block;font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(2rem,4vw,3rem);color:var(--a);line-height:1.1;font-variant-numeric:tabular-nums;text-align:center}
+.yt-stats span{display:block;margin-top:8px;font-size:.95rem;color:#cfcac6;text-align:center}
+.socials{display:flex;justify-content:center;gap:14px;margin-top:34px}
+.soc{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);color:#fff;transition:background .2s}
+a.soc:hover{background:#ff0000}
+.soc.is-off{opacity:.4;cursor:default}
+@media(max-width:700px){.yt-stats{grid-template-columns:1fr 1fr;gap:14px 10px}.yt-stats li{border-left:0}.yt-stats li:nth-child(even){border-left:1px solid rgba(255,255,255,.1)}.yt-band{padding:44px 0 36px}}

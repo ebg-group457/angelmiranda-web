@@ -137,3 +137,4 @@ a.soc:hover{background:#ff0000}
 .soc.is-off{opacity:.4;cursor:default}
 @media(max-width:700px){.yt-stats{grid-template-columns:1fr 1fr;gap:14px 10px}.yt-stats li{border-left:0}.yt-stats li:nth-child(even){border-left:1px solid rgba(255,255,255,.1)}.yt-band{padding:44px 0 36px}}
 a.soc.fb:hover{background:#1877f2}
+a.soc.ig:hover{background:#e1306c}
